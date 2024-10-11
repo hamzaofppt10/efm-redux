@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/edit/:postId" element={<EditPost />} />
-          <Route path="/contact" element={<h1>Contact</h1>} />
+          <Route path="/BMI" element={<BMI />} />
         </Routes>
       </div>
     </Router>
