@@ -50,7 +50,7 @@ const BMI = () => {
         {state.bmi && (
           <div className="mt-6 text-center">
             <h2 className={`text-xl font-semibold`}>Your BMI is: {state.bmi}</h2>
-            <h3 className={`text ${state.initialState.bmiColor}`}>{state.bmiCategory}</h3>
+            <h3 className={`text ${state.bmiColor}`}>{state.bmiCategory}</h3>
             
           </div>
         )}
