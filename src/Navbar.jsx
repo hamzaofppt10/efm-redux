@@ -1,3 +1,4 @@
+import { Plus } from 'lucide-react';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -15,6 +16,9 @@ const Navbar = () => {
                     </li>
                     <li>
                         <Link to="/BMI" className="text-white hover:text-gray-400">BMI Calculator</Link>
+                    </li>
+                    <li className=''>
+                    <Link to="/add" className="text-white hover:text-gray-400 flex items-center">Add Post<Plus /></Link>
                     </li>
                     {/* <li>
                         <Link to="/contact" className="text-white hover:text-gray-400">Contact</Link>

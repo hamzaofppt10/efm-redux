@@ -1,9 +1,10 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./Navbar";
-import BMI from "./BMI";
-import Home from "./Home";
-import EditPost from "./EditPost";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Home';
+import EditPost from './EditPost';
+import Navbar from './Navbar'; // Assuming you have a Navbar component
+import BMI from './BMI';
+import AddPost from './AddPost';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/edit/:postId" element={<EditPost />} />
+          <Route path="/add" element={<AddPost />} />
           <Route path="/BMI" element={<BMI />} />
         </Routes>
       </div>
